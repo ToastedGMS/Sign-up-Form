@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'POSTERS';
+    src: url(https://www.fontspace.com/posters-italic-font-f62623);
+    /*use Impact as fallback font for this */
+}
+
+h1 {
+    font-family: 'POSTERS', Impact, 'Arial Narrow Bold', sans-serif;
+}
