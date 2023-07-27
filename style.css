@@ -1,9 +1,111 @@
 @font-face {
-    font-family: 'POSTERS';
-    src: url(https://www.fontspace.com/posters-italic-font-f62623);
-    /*use Impact as fallback font for this */
+    font-family: AbrilFatFace;
+    src: url('AbrilFatface-Regular.ttf');
 }
 
-h1 {
-    font-family: 'POSTERS', Impact, 'Arial Narrow Bold', sans-serif;
+@font-face {
+    font-family: Roboto;
+    src: url('Roboto-Regular.ttf')
+}
+
+* {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+html, body {
+    height: 100vh;
+}
+
+div.container {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    background-color: rgb(243, 240, 240);
+}
+
+div.img {
+    display: flex;
+    flex-grow: 1;
+    background-image: url('tape.jpg');
+    height: 100%;
+    width: fit-content;
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+div.img > p {
+    position: absolute;
+    align-self: center;
+    bottom: 0;
+    color: white;
+    flex-shrink: 2;
+}
+
+div.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 5px;
+    background-color: rgba(255, 255, 255, 0.226);
+    position: relative;
+    bottom: 19%;
+}
+
+div.logo > p {
+    font-family: AbrilFatFace, Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 45px;
+    line-height: 0%;
+}
+
+div.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+div.top, div.bottom {
+    background-color: rgb(243, 240, 240);
+    padding: 20px 30px;
+}
+
+div.forms {
+    padding: 30px;
+    background-color: rgb(223, 223, 223);
+    position: relative;
+    bottom: 3px;
+}
+
+div.forms > p {
+    font-size: xx-large;
+    font-weight: bold;
+    line-height: 0%;
+}
+
+#newForm {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.row {
+    display: flex;
+    max-height: fit-content;
+    max-width: 510px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;  
+}
+
+input {
+    margin: 1px 8px 8px 8px;
+    border-radius: 6px;
+}
+
+label {
+    font-size: small;
 }
